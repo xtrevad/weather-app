@@ -1,0 +1,1 @@
+This is a weather app which gets its data from the OpenWeather API. The initial location is based on the brower's built-in geolocation API, and users can then use the search bar to find the weather in any other city/suburb from around the world.
