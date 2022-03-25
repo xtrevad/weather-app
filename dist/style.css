@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: rgb(0, 0, 0);
+}
+
+.content {
+  display: grid;
+  place-items: center;
+
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 35%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+#search {
+  display: grid;
+  place-items: center;
+  margin: 20px;
+  width: 200px;
+  background-color: rgba(128, 128, 128, 0.541);
+  border-radius: 15px;
+}
+
+#city,
+#country {
+  margin: 10px;
+  width: 80%;
+}
+
+#search-btn {
+  padding: 5px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: color ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s;
+}
+
+#search-btn:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+#search-btn:active {
+  background-color: #333;
+  color: white;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-container {
+  display: grid;
+  place-items: center;
+}
+
+.search-heading {
+  color: white;
+  font-weight: 400;
+}
+
+.heading {
+  color: white;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+.current-weather-card {
+  background-color: rgba(128, 128, 128, 0.482);
+  color: white;
+  display: flex;
+  width: 40ch;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast-container {
+  width: 80vw;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  max-height: 300px;
+  gap: 10px;
+}
+
+.sub-container::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 0px;
+  border-radius: 10px;
+}
+
+.sub-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.sub-container div {
+  background-color: rgba(128, 128, 128, 0.425);
+  color: white;
+  min-width: 150px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-container p,
+h3 {
+  margin: 5px;
+}
+
+.sub-container img {
+  height: 40px;
+}
+
+.current-weather-card img {
+  height: 120px;
+  width: 120px;
+  margin: -20px;
+}
+
+p {
+  font-weight: 300;
+  font-size: small;
+}
