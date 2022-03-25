@@ -23,7 +23,7 @@ const displayCurrentWeatherCard = (weatherPacket) => {
   // Icon display
   const icon = document.createElement('img');
   const iconCode = weatherPacket.data.current.weather[0].icon;
-  icon.src = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
+  icon.src = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
   cardLeft.appendChild(icon);
 
   // Current conditions display
@@ -81,7 +81,7 @@ const displayHourlyForecast = (weatherPacket) => {
     // Icon
     const icon = document.createElement('img');
     const iconCode = hour.weather[0].icon;
-    icon.src = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
+    icon.src = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
     card.appendChild(icon);
     // Current conditions display
     const cond = document.createElement('p');
@@ -127,7 +127,7 @@ const displayWeeklyForecast = (weatherPacket) => {
     // Icon
     const icon = document.createElement('img');
     const iconCode = day.weather[0].icon;
-    icon.src = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
+    icon.src = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
     card.appendChild(icon);
     // Current conditions display
     const cond = document.createElement('p');
