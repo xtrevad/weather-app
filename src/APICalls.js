@@ -25,7 +25,7 @@ const searchLocation = async () => {
   const city = document.getElementById('city').value;
   const country = document.getElementById('country').value;
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=b4f1fce15dcb78cc634772177311bb48`,
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=b4f1fce15dcb78cc634772177311bb48`,
     { mode: 'cors' }
   );
   const data = await response.json();
@@ -40,7 +40,7 @@ const geoFindMe = () => {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=b4f1fce15dcb78cc634772177311bb48`,
+      `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=b4f1fce15dcb78cc634772177311bb48`,
       { mode: 'cors' }
     );
     const data = await response.json();
